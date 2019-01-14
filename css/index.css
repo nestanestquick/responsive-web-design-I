@@ -161,6 +161,7 @@ header .logo {
 .main-content .bottom-content {
   margin-top: 37px;
   padding: 0 10px;
+  display: inline-block
 }
 
 .main-content .bottom-content .text-content {
@@ -190,23 +191,44 @@ footer {
 }
 
 .container {
-    background: green;
+    width: 880px;
     margin: auto;
 }
 
 @media (max-width: 800px) {
     .container {
         width: 100%;
-        background: pink;
-    }
+}
+
+@media (max-width: 800px) {
+
 }
 
 @media (max-width: 500px){
     .container {
         width: 100%;
-        background: red;
+    }     
+}
+
+@media (max-width: 500px){
+    header nav {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+@media (max-width: 500px){
+    .wide-image{
+        width: 100%;
     }
 }
-header {
-    display: inline;
+@media (max-width: 500px){
+    .text-content {
+        width: 100%;
+        margin: 20px;
+        padding: 0 10px;
+
+    }
+}
 }
